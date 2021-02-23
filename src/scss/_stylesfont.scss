@@ -1,0 +1,172 @@
+/* ---- HEADING & PARAGRAPH PROPERTIES -----*/
+
+$roboto:"Roboto Slab";
+$rubix:"Rubik";
+
+p {
+    font-family: $rubix;   
+    font-weight: 400;
+    font-style: normal;   
+    color: #878DA4;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+
+.heading--large {
+    font-family:$rubix;
+    color: #12245F;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 72px;
+    font-style: normal;
+
+}
+
+.heading--small {
+    font-family: $rubix;
+    color:#09A4D8;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.heading--small--normal {
+    font-family: $rubix;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #878DA4;
+    margin: 0;
+}
+
+.heading--small--bold {
+    font-family: $rubix;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.heading--med--bold {
+    font-family: $rubix;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.main-title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.heading--main {
+    font-family: $rubix;
+    color: #0F1C49;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 67px;
+    font-style: normal;
+}
+
+.heading--alternate {
+    font-family: $roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 48px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.form--heading {
+
+    font-family: $roboto;
+    font-size: 32px;
+    line-height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0F1C49;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+input {
+    font-family: $rubix;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #878DA4;
+}
+
+.sub-heading {
+    font-family:$rubix;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.sub-heading-2 {
+    font-family:$rubix;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.testimonial-content {
+    font-family: $roboto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    width:  803px;
+    margin-bottom: 64px;
+}
+
+li {
+    font-family: 'open sans', sans-serif;      
+    color: #878DA4;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+    padding-bottom: 8px;
+}
+
+ul {
+    margin: 0px;
+}
+
+::placeholder {
+    font-family: 'Rubix';
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+.linkref1 {
+    color: #09A4D8;
+    font-family: 'Rubik';
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header .linkref1 {
+    margin-top: 176px;
+    margin-bottom: 100px;
+}
+

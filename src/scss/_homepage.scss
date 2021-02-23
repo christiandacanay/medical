@@ -1,0 +1,481 @@
+#hero {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+
+}
+
+body {
+    margin: 0px;
+    position: relative;
+}
+
+/* ----- DROPDOWN PROPERTIES -----*/
+
+#selectlocation {
+    width:100%;
+}
+
+select {
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    color: black;
+    font-size: 16px;
+    line-height: 17px;
+    padding: 20px 32px 24px 24px; 
+    font-family: 'open-sans', sans-serif;
+}
+
+/* ------ 1ST PORTION -------- */
+
+.topheadingcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topheadingwrapper {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: 500px;
+
+}
+
+.bgimg {
+    width: 100%;
+}
+.mainimage {
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.mainimage__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/* ----- FORM SECTION -----*/
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 0 40px 40px 40px;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 100px 5px 5px 5px;
+    position: relative;
+    top: -300px;
+
+}
+
+
+.formlayout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    width: 420px;
+}
+
+.input {
+    width: 100%;
+    margin-top: 16px;
+    height: 56px;
+    padding-left: 24px;
+    outline: none;
+}
+
+.input5 {
+    margin-bottom: 16px;
+}
+
+.borderinput {
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #EEEEEE;
+}
+
+/* ----- ABOUT US SECTION ----- */
+
+.aboutusmaincontainer {
+    padding-bottom: 120px;
+}
+
+.aboutuscontainer {
+    margin-left: 70px;
+    margin-top: 104px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bgset1 {
+    position: absolute;
+    background-color: #FAB91C;
+    opacity: 10%;
+    border-top-right-radius: 100px;
+    width: 605px;
+    height: 583px;
+    left: 0;
+    top: 1458px;
+    z-index: -1;
+}
+.aboutuswrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 430px;
+}
+
+.headingtext1 {
+    margin: 0px;
+    margin-top: 80px;
+}
+.ptextright {
+    margin-left: 100px;
+}
+
+.text1 {
+    margin-top: 60px;
+}
+
+.text2 {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.hyperlink {
+    color: #FAB91C;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ----- OUR SERVICES SECTION ----- */
+
+.servicecontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    background-color: #F9FAFB;
+    border-top-left-radius: 80px;
+}
+
+.servicestext {
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 100px 0 0 0;
+    width: 500px;
+
+}
+
+.service__copy {
+    margin-left: 100px;
+
+}
+
+.servicebutton {
+    max-width: 309px;
+    margin-top: 100px;
+}
+
+.gridcontainer {
+    width: 570px;
+    position: relative;
+    top: -100px;
+}
+
+.gridsection1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.gridsection2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F9FAFB;
+    width: 270px;
+    height: 270px;
+    border: 10px solid white;
+}
+
+.grid1 {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 10px;
+}
+
+.grid2 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-left: 10px;
+}
+
+.grid3 {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.grid4 {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    margin-left: 10px;
+}
+
+/* ---- GALLERY SLIDESHOW SECTION -----*/
+
+.gallerymaincontainer {
+    position: relative;
+    height: 700px;
+}
+
+.bgset2 {
+    width: 935px;
+    height: 764px;
+    border-top-right-radius: 100px;
+    position: absolute;
+    background-color: #FAB91C;
+    opacity: 10%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.gallerycontainer {
+    margin-top: 120px;
+}
+
+.gallerywrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 135px;
+}
+
+.galleryheading {
+    margin: 0px;
+    margin-bottom: 80px;
+}
+
+.imagegallery {
+    display: flex;
+    margin-bottom: 56px;
+}
+
+.imagebox {
+    margin-left: 30px;
+    width: 600px;
+    height: 450px;
+}
+
+.imagebox img  {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.arrowscontainer {
+    position: absolute;
+
+    .arrows {
+        position: relative;
+        right: -880px;
+    }
+
+    .rightarrow {
+        margin-left: 85px;
+    }
+
+
+}
+
+/* ----- TESTAMONIAL SECTION ------ */
+
+.testcontainer {
+    margin-top: 200px;
+}
+
+.testwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F9FAFB;
+    border-radius: 100px 8px;
+
+    h2 {
+        max-width: 830px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 38px;
+        font-style: normal;
+        margin-bottom: 64px;
+    }
+}
+
+.quotation {
+    margin-top: 46px;
+}
+
+.testcontainer h3 {
+    width: 830px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.headicons {
+    display: flex;
+    margin-bottom: 116px;
+}
+
+.icons {
+    width: 48px;
+    height: 48px;
+    background-color: red;
+    margin: 24px 24px 0 0;
+    border-radius: 50px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.icon1 {
+    background-image: url(https://images.pexels.com/photos/3220360/pexels-photo-3220360.jpeg?cs=srgb&dl=pexels-nichole-sebastian-3220360.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.icon2 {
+    background-image: url(https://images.pexels.com/photos/3220360/pexels-photo-3220360.jpeg?cs=srgb&dl=pexels-nichole-sebastian-3220360.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.icon3 {
+    background-image: url(https://images.pexels.com/photos/3220360/pexels-photo-3220360.jpeg?cs=srgb&dl=pexels-nichole-sebastian-3220360.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* --------- NEWS SECTION --------- */
+
+.newscontainer {
+    margin: 120px 0 120px 0;
+}
+
+.imgsection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.news {
+    background-color: red;
+    width: 370px;
+    height: 493px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.newsimg1 {
+    margin-right: 30px;
+}
+
+.newsimg2 {
+    margin-right: 30px;
+}
+
+.hyperlink {
+    float: right;
+}
+
+/* ------- INNER IMAGE SECTION ------- */
+
+.innerimg {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: white;
+    width: 322px;
+    height: 176px;
+    border-radius: 60px 8px;
+    margin-bottom: 24px;
+    padding-left: 40px;
+
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #0F1C49;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-weight: 400;
+        color: #878DA4;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 40px;
+    }
+}
+
+.newsimg1 {
+    background-image: url(https://images.pexels.com/photos/4721981/pexels-photo-4721981.jpeg?cs=srgb&dl=pexels-ali-pazani-4721981.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.newsimg2 {
+    background-image: url(https://images.pexels.com/photos/245388/pexels-photo-245388.jpeg?cs=srgb&dl=pexels-uus-supendi-245388.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.newsimg3 {
+    background-image: url(https://images.pexels.com/photos/3616937/pexels-photo-3616937.jpeg?cs=srgb&dl=pexels-h%E1%BA%A3i-nguy%E1%BB%85n-3616937.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box-content {
+
+    display: flex;
+    align-items: center;
+
+    p {
+        color: black;
+    }
+}

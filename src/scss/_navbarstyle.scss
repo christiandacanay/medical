@@ -1,0 +1,59 @@
+/* ----- TOP NAVIGATION BAR CSS ----- */
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+
+    button {
+        float: right;
+    }
+}
+
+.logoparent {
+    margin-right: 80px;
+}
+
+.navparent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+
+    a {
+        font-family: 'Rubik';
+        margin-right: 60px;
+        padding: 0px;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+        color: #878DA4;
+        line-height: 28px;
+
+        &:hover {
+            border-bottom: 2px solid #FAB91C;
+            color: #0F1C49;
+        }
+    }  
+
+}
+
+.navparent-alt {
+
+    a:hover {
+        border-bottom: 2px solid #09A4D8;
+        color: #0F1C49
+    }
+}
+
+
+li {
+    display: flex;
+    align-content: center;
+}
+
+li:hover {
+    cursor: pointer;
+}

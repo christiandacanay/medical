@@ -1,0 +1,132 @@
+
+.footer {
+    color: white;
+    background-color:#0E418A;
+
+    .footer__inner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .box-content p {
+        color: rgba($color: #FFFFFF, $alpha: 0.6);
+    }
+
+    .space {
+        margin: 40px 0 25px 0;
+    }
+}
+
+.footer--alt {
+    background-color: white;
+    color: #878DA4;
+
+    .footer__inner {
+        border-top: 1px solid grey;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .footer-list h3 {
+        color: black;
+    }
+
+    .box-content p {
+        color: #0F1C49
+    }
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__column1 {
+        width: 380px;
+    }
+
+    .footer__column2 {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    .info-box {
+        display: flex;
+        flex-direction: column;
+
+        .box-content {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            img {
+                margin-right: 8px;
+            }
+
+        }
+    }
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    
+    h3 {
+        padding-bottom: 24px;
+        line-height: 32px;
+        margin: 0px;
+    }
+
+    ul {
+        margin-left: 120px;
+    }
+
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        color: #878DA4;
+    }
+}
+
+.footer-lower-container {
+
+    .lower-container__wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid grey;
+        margin-bottom: 65px;
+        padding-top: 60px;
+        
+
+    }
+
+    .lower-container1 {
+        display: flex;
+        align-items: flex-start;
+        width: 480px;
+
+        img {
+            margin-right: 40px;
+        }
+    }
+
+    .lower-container2 {
+        width: 350px;
+
+        .input-button-wrapper {
+            display: flex;
+
+        }
+
+        .input1  {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0px;
+            margin-top: 24px;
+            width: 100%;
+            height: 56px;
+            padding-left: 24px;
+        }
+
+    }
+}
+

@@ -1,0 +1,69 @@
+.topheading {
+    text-align: center;
+}
+// DEPARMENT BUTTON TABS // 
+
+.button-tabs {
+
+    margin: 80px 0 18px 0;
+
+    a {
+        margin-right: 49px;
+        text-decoration: none;
+        list-style-type: none;
+        font-family: 'Rubik';
+        font-weight: normal;
+        padding: 0px;
+        color: #878DA4;
+
+    &:hover {
+
+        color: #09A4D8;
+        border-bottom: 3px solid #09A4D8;
+        padding-bottom: 18px;
+    
+    }
+        
+    &:active {
+        
+        position: relative;
+        top: 2px;
+    
+    }
+    }
+}
+
+
+
+.content-container {
+    padding: 80px 0 24px 0;
+}
+
+.image-row {
+    border-top: 1px solid #EEEEEE;
+}
+
+.image-row2 {
+    margin-top: 30px;
+}
+
+.box-items {
+
+    text-align: center;
+    padding-bottom: 24px;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+
+        .button--hidden {
+            opacity: 1;
+        }
+    }
+        
+    p {
+        margin-bottom: 24px;
+    }
+}

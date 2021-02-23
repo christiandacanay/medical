@@ -1,0 +1,261 @@
+/* ABOUT US PAGE - CSS STYLING SECTION */
+
+.slider-container {
+    margin-top: 24px;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: 1280px;
+    height: 400px;
+    border-radius: 16px;
+}
+
+.slider-container__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wrapper__content {
+
+    margin-top: 132px;
+    margin-bottom: 40px;
+
+        h1 {
+            font-size: 56px;
+            line-height: 72px;
+            font-weight: bolder;
+            color: #FFFFFF;
+            margin: 0 0 40px 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #FFFFFF
+        }
+}
+
+
+
+
+.sliderimg {
+    background-image: url('/Aboutus Assets/Img.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-1__columncontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    border-bottom: #EEEEEE solid 1px;
+    padding-bottom: 100px;
+
+    & .column-container__1 {
+        width: 553px;
+    }
+
+
+    & .column-container__2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 40px;
+        border-radius: 8px;
+        background-color: #F8FBFC;
+
+        :last-child {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+/* ----- WHY CHOOSE US SECTION ---- */
+
+.choose-container {
+    text-align: center;
+    margin-top: 100px;
+
+     h5 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    h1 {
+        margin-bottom: 60px;
+    }
+}
+
+.choose-container__content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & .content-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .content-style {
+            height: 477px;
+            width: 370px;
+        }
+    }
+}
+
+.content-style h4 {
+    margin-bottom: 16px;
+}
+
+.content-style h2 {
+font-size: 24px;
+}
+
+.imgstyle {
+    background-color: blue;
+    width: 370px;
+    height: 278px;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.imgbox1 {
+    background-image: url(https://images.unsplash.com/photo-1604420504944-faf557a48b34?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDh8fGZvb2R8ZW58MHwyfDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgbox2 {
+    background-image: url(https://images.unsplash.com/photo-1556906918-c3071bd11598?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGFzaWFuJTIwbW9kZWxzfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+}
+
+.imgbox3 {
+        background-image: url(https://images.unsplash.com/photo-1543826173-70651703c5a4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGFzaWFuJTIwbW9kZWxzfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/*  ------- SLIDESHOW SECTION ------- */
+
+.slideshow-container {
+    margin-top: 100px;
+    background-color:#F8FBFC;
+    padding-top: 100px;
+}
+
+.slideshow_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content-img {
+    width: 770px;
+    height:433px;
+    margin-right: 8px;
+}
+
+
+/* ------ TESTIMONIAL SECTION ------ */
+
+.flex-column {
+
+    margin-top: 100px;
+
+    h3 {
+        color: #09A4D8;
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+
+.testimonial_box {
+
+    width: 370px;
+    height: 312px;
+    margin-bottom: 100px;
+
+    .box-wrapper {
+        display: flex;
+        margin-bottom: 40px;
+        margin-top: 48px;
+    }
+
+    &:nth-child(2) {
+
+    margin-top: 50px;
+
+    }
+
+    .face-icons {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 21px;
+        }
+    }
+}
+
+.flex-center {
+
+    margin-bottom: 100px;
+    
+    li {
+
+        border-radius: 50%;
+        margin-right: 16px;
+    }
+}
+
+//  ------- FOOTER SECTION (ABOUTUS)-----//
+
+.content-wrapper1 {
+    margin-top: 60px;
+}
+
+.box-contents {
+    display: flex;
+}
+
+.social-media-wrapper1 {
+
+    margin-top: 60px;
+
+    & img {
+
+    margin-right: 40px;
+
+    }
+
+    :last-child {
+        margin-right: 0px;
+    }
+}
+
+// -------- FOOTER SECTION (PART 2) --------//
+
+.foot-note {
+    background-color: #103365;
+    height: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & p {
+        color: #878DA4;
+        font-size: 14px;
+    }
+}
+
