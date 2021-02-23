@@ -558,6 +558,72 @@ select {
   color: black;
 }
 
+@media screen and (max-width: 1200px) {
+  .logoparent {
+    margin-bottom: 20px;
+  }
+  .navcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navcontainer .button {
+    display: none;
+  }
+  .topheadingwrapper {
+    text-align: center;
+    width: 100%;
+  }
+  .mainimage img {
+    display: none;
+  }
+  .mainimage {
+    margin-bottom: 60px;
+  }
+  .mainimage__overlay {
+    position: unset;
+  }
+  .mainimage__overlay .flex-end {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .formcontainer {
+    position: unset;
+  }
+  .aboutuscontainer {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .bgset1 {
+    display: none;
+  }
+  .aboutuscontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
+  .aboutuswrapper .ptextright {
+    margin-left: 0px;
+  }
+  .aboutuswrapper .ptextright .hyperlink {
+    float: none;
+    text-align: center;
+  }
+  .container .pwrap h1 {
+    text-align: center;
+  }
+}
+
 /* ----- TOP NAVIGATION BAR CSS ----- */
 .navcontainer {
   display: -webkit-box;
@@ -567,10 +633,6 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 32px;
-}
-
-.navcontainer button {
-  float: right;
 }
 
 .logoparent {

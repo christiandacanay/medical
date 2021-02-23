@@ -479,3 +479,86 @@ select {
         color: black;
     }
 }
+
+// MEDIA QUERIES ---- 1024PX --------//
+
+@media screen and (max-width: 1200px) {
+
+    .logoparent {
+        margin-bottom: 20px;
+    }
+
+
+    .navcontainer {
+        display: flex;
+        flex-direction: column;
+
+     .button {
+         display: none;
+     }
+
+    }
+
+    .topheadingwrapper {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainimage img {
+        display: none;
+    }
+
+    .mainimage {
+        margin-bottom: 60px;
+    }
+
+    .mainimage__overlay {
+        position: unset;
+
+        .flex-end {
+            justify-content: center;
+        }
+    
+    }
+
+    .formcontainer {
+        position: unset;
+    }
+
+    .aboutuscontainer {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .bgset1 {
+        display: none;
+    }
+
+    .aboutuscontainer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .aboutuswrapper {
+
+        .ptextright {
+            margin-left: 0px;
+
+            .hyperlink {
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .container {
+
+        .pwrap h1 {
+            text-align: center;
+    
+        }
+    }
+        
+
+}
