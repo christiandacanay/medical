@@ -12,6 +12,12 @@
   margin: 0px auto;
 }
 
+@media screen and (max-width: 1170px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -392,6 +398,7 @@ select {
           align-items: center;
   background: #F9FAFB;
   border-radius: 100px 8px;
+  margin: 0 50px;
 }
 
 .testwrapper h2 {
@@ -459,16 +466,39 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .imgsection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
 }
 
 .news {
-  background-color: red;
-  width: 370px;
-  height: 493px;
+  height: 490px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,18 +509,8 @@ select {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.newsimg1 {
-  margin-right: 30px;
-}
-
-.newsimg2 {
-  margin-right: 30px;
-}
-
-.hyperlink {
-  float: right;
+  padding: 0 24px 24px 24px;
+  width: 100%;
 }
 
 /* ------- INNER IMAGE SECTION ------- */
@@ -505,10 +525,9 @@ select {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: white;
-  width: 322px;
+  width: 100%;
   height: 176px;
   border-radius: 60px 8px;
-  margin-bottom: 24px;
   padding-left: 40px;
 }
 
@@ -527,19 +546,19 @@ select {
   margin-top: 40px;
 }
 
-.newsimg1 {
+.box1 {
   background-image: url(https://images.pexels.com/photos/4721981/pexels-photo-4721981.jpeg?cs=srgb&dl=pexels-ali-pazani-4721981.jpg&fm=jpg);
   background-position: center;
   background-size: cover;
 }
 
-.newsimg2 {
+.box2 {
   background-image: url(https://images.pexels.com/photos/245388/pexels-photo-245388.jpeg?cs=srgb&dl=pexels-uus-supendi-245388.jpg&fm=jpg);
   background-position: center;
   background-size: cover;
 }
 
-.newsimg3 {
+.box3 {
   background-image: url(https://images.pexels.com/photos/3616937/pexels-photo-3616937.jpeg?cs=srgb&dl=pexels-h%E1%BA%A3i-nguy%E1%BB%85n-3616937.jpg&fm=jpg);
   background-position: center;
   background-size: cover;
@@ -556,6 +575,19 @@ select {
 
 .box-content p {
   color: black;
+}
+
+@media screen and (max-width: 1242px) {
+  .bgset1 {
+    display: none;
+  }
+  .aboutuswrapper .ptextright {
+    margin-left: 0px;
+  }
+  .aboutuswrapper .hyperlink {
+    float: none;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -575,6 +607,8 @@ select {
     display: none;
   }
   .topheadingwrapper {
+    border-top: 1px solid grey;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
   }
@@ -599,28 +633,64 @@ select {
     margin-top: 0;
     padding-top: 0;
   }
-  .bgset1 {
-    display: none;
-  }
   .aboutuscontainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-left: 0;
   }
+  .wrapperimg {
+    margin-left: 30px;
+  }
+  .aboutuswrapper {
+    margin: 0 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .aboutuswrapper .ptextright {
     margin-left: 0px;
   }
-  .aboutuswrapper .ptextright .hyperlink {
-    float: none;
-    text-align: center;
-  }
   .container .pwrap h1 {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .servicecontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-top: 0;
+  }
+  .servicecontainer .servicestext {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .servicecontainer .servicestext .service__copy {
+    margin-left: 0;
+  }
+  .servicecontainer .servicestext .servicebutton {
+    margin-top: 30px;
+  }
+  .servicecontainer .gridcontainer {
+    position: unset;
+    margin: 40px;
   }
 }
 
@@ -633,6 +703,10 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 32px;
+}
+
+.navcontainer button {
+  margin-left: 120px;
 }
 
 .logoparent {
@@ -652,6 +726,10 @@ select {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+}
+
+.navparent li:last-child a {
+  margin-right: 0px;
 }
 
 .navparent a {

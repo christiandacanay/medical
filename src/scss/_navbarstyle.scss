@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     margin-top: 32px;
+
+    button {
+        margin-left: 120px;
+    }
 }
 
 .logoparent {
@@ -17,6 +21,10 @@
     list-style-type: none;
     padding: 0px;
     margin: 0px;
+
+    li:last-child a {
+        margin-right: 0px;
+    }
 
     a {
         font-family: 'Rubik';
