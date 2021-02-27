@@ -1,63 +1,75 @@
 /* ----- TOP NAVIGATION BAR CSS ----- */
 
 .navcontainer {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
 
-    button {
-        margin-left: 120px;
-    }
+  button {
+    margin-left: 120px;
+  }
 }
 
 .logoparent {
-    margin-right: 80px;
+  margin-right: 80px;
+
+  @media screen and (max-width: 1200px) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .navparent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 
-    li:last-child a {
-        margin-right: 0px;
+  li:last-child a {
+    margin-right: 0px;
+  }
+
+  a {
+    font-family: "Rubik";
+    margin-right: 60px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #878da4;
+    line-height: 28px;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+      margin-top: 20px;
+      font-size: 20px;
     }
 
-    a {
-        font-family: 'Rubik';
-        margin-right: 60px;
-        padding: 0px;
-        font-weight: 400;
-        font-size: 16px;
-        text-decoration: none;
-        color: #878DA4;
-        line-height: 28px;
+    &:hover {
+      border-bottom: 2px solid #fab91c;
+      color: #0f1c49;
+    }
+  }
 
-        &:hover {
-            border-bottom: 2px solid #FAB91C;
-            color: #0F1C49;
-        }
-    }  
-
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .navparent-alt {
-
-    a:hover {
-        border-bottom: 2px solid #09A4D8;
-        color: #0F1C49
-    }
+  a:hover {
+    border-bottom: 2px solid #09a4d8;
+    color: #0f1c49;
+  }
 }
 
-
 li {
-    display: flex;
-    align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
