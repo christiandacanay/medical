@@ -62,6 +62,10 @@ select {
 .mainimage {
   margin-bottom: 120px;
   position: relative;
+
+  img {
+    width: 100%;
+  }
 }
 
 .mainimage__overlay {
@@ -123,7 +127,7 @@ select {
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     flex-direction: column;
   }
 }
@@ -159,7 +163,7 @@ select {
   width: 500px;
   height: 430px;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     height: unset;
     text-align: center;
   }
@@ -592,6 +596,7 @@ select {
 
   .wrapperimg {
     max-width: 500px;
+    width: 100%;
   }
 
   .aboutuswrapper {
@@ -634,6 +639,20 @@ select {
       position: unset;
       margin: 40px;
     }
+  }
+}
+
+// --- MEDIA QUERIES ----- 600wPX ----- //
+
+@media screen and (max-width: 600px) {
+  .aboutuswrapper {
+    width: 100%;
+  }
+
+  .servicestext {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
   }
 }
 
