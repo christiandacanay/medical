@@ -246,10 +246,10 @@
   }
 }
 
-// MEDIA QUERIES --- 1300PX --- TESTIMONIALS ----//
+// MEDIA QUERIES --- 1129PX --- TESTIMONIALS ----//
 
-@media screen and (max-width: 759px) {
-  .testimonial-box {
+@media screen and (max-width: 1129px) {
+  .testimonial_box {
     margin-bottom: 0;
 
     &:nth-child(2) {

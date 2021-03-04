@@ -528,14 +528,6 @@ select {
   }
 }
 @media screen and (max-width: 1200px) {
-  .navcontainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .navcontainer .button {
-    display: none;
-  }
-
   .topheadingwrapper {
     border-top: 1px solid grey;
     margin-top: 20px;
@@ -633,14 +625,24 @@ select {
 }
 /* ----- TOP NAVIGATION BAR CSS ----- */
 .navcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 32px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1201px) {
+  .navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navcontainer .button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-  .logoparent {
+  .navcontainer__top {
     margin-bottom: 30px;
   }
 }
@@ -652,6 +654,10 @@ select {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  transition: max-height 0.3s;
+}
+.navparent li {
+  justify-content: center;
 }
 .navparent li:last-child a {
   margin-right: 0px;
@@ -679,7 +685,13 @@ select {
 }
 @media screen and (max-width: 768px) {
   .navparent {
-    flex-direction: column;
+    display: block;
+    max-height: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navparent.navparent--open {
+    max-height: 1000px;
   }
 }
 
@@ -829,6 +841,25 @@ li:hover {
   background-color: #09a4d8;
   width: 16px;
   height: 16px;
+}
+
+.mobile-menu-btn {
+  padding: 5px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+.mobile-menu-btn svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 769px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
 
 /* ---- FONT VARIABLES -----*/
@@ -1279,11 +1310,11 @@ header .linkref1 {
   margin-right: 16px;
 }
 
-@media screen and (max-width: 759px) {
-  .testimonial-box {
+@media screen and (max-width: 1129px) {
+  .testimonial_box {
     margin-bottom: 0;
   }
-  .testimonial-box:nth-child(2) {
+  .testimonial_box:nth-child(2) {
     margin-top: 0px;
   }
 }

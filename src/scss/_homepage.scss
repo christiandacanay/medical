@@ -547,15 +547,6 @@ select {
 // MEDIA QUERIES ---- 1200PX --------//
 
 @media screen and (max-width: 1200px) {
-  .navcontainer {
-    display: flex;
-    flex-direction: column;
-
-    .button {
-      display: none;
-    }
-  }
-
   .topheadingwrapper {
     border-top: 1px solid grey;
     margin-top: 20px;

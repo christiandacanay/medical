@@ -1,13 +1,23 @@
 /* ----- TOP NAVIGATION BAR CSS ----- */
 
 .navcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 32px;
+  overflow: hidden;
+
+  @media screen and (min-width: 1201px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
 }
 
-.logoparent {
+.navcontainer__top {
   @media screen and (max-width: 1200px) {
     margin-bottom: 30px;
   }
@@ -20,6 +30,11 @@
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  transition: max-height 0.3s;
+
+  li {
+    justify-content: center;
+  }
 
   li:last-child a {
     margin-right: 0px;
@@ -48,7 +63,14 @@
   }
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
+    display: block;
+    max-height: 0;
+  }
+
+  &.navparent--open {
+    @media screen and (max-width: 768px) {
+      max-height: 1000px;
+    }
   }
 }
 
