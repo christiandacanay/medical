@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -54,7 +58,6 @@
           Make an appointment
         </button>
       </div>
-
       <!-- FORM CONTAINER SECTION  -->
 
       <div class="topheadingcontainer container">
@@ -260,17 +263,51 @@
 
       <div class="testcontainer">
         <div class="testwrapper">
-          <img
-            class="quotation"
-            src="Assets/left-quote.png"
-            alt="quotationicon"
-          />
-          <p class="testimonial-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do
-            eiusmod tempor incididunt.
-          </p>
-          <p>Frank Galaghers</p>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           <div class="headicons">
             <div class="icons icon1"></div>
@@ -279,7 +316,6 @@
           </div>
         </div>
       </div>
-
       <!------- LATEST NEWS SECTION -------->
 
       <div class="newscontainer">
@@ -374,6 +410,8 @@
       </div>
     </footer>
 
+    <script src="./fakeplugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="./js.js"></script>
   </body>
 </html>

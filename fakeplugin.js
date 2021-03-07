@@ -1,0 +1,3 @@
+function handleMobileClick(){
+    alert("cuntbag");
+}

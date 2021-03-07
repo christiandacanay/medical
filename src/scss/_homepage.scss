@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-/* ----- DROPDOWN PROPERTIES -----*/
+/* ----- FORM DROPDOWN PROPERTIES -----*/
 
 #selectlocation {
   width: 100%;
@@ -356,32 +356,24 @@ select {
 .testwrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background: #f9fafb;
   border-radius: 100px 8px;
   margin: 0 50px;
+}
 
-  h2 {
-    max-width: 830px;
-    text-align: center;
-    font-weight: 300;
-    line-height: 38px;
-    font-style: normal;
-    margin-bottom: 64px;
-  }
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
 }
 
 .quotation {
   margin-top: 46px;
 }
 
-.testcontainer h3 {
-  width: 830px;
-  margin-top: 30px;
-  text-align: center;
-}
-
 .headicons {
+  align-self: center;
   display: flex;
   margin-bottom: 116px;
 }

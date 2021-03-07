@@ -32,6 +32,10 @@
   margin: 0px;
   transition: max-height 0.3s;
 
+  @media screen and (max-width: 1200px) {
+    justify-content: space-evenly;
+  }
+
   li {
     justify-content: center;
   }
