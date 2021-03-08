@@ -10,7 +10,8 @@
     mobilBtn.addEventListener("click", handleMobileClick);
 
 
-    // ----- Slider
+    // ----- Slider (HOMEPAGE) 
+
 	var slider = new Splide('.splide', {
         pagination: false,
         arrows: false
@@ -25,6 +26,15 @@
             slider.go(index);
         });
     });
+
+    // ---- Slider (ABOUT US)
+
+    var slider2 = new Splide('.splide2', {
+        arrows: false,
+    } );
+    
+    slider2.mount();
+    
 
 
 })();

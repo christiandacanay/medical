@@ -204,14 +204,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .testimonial_box {
   width: 100%;
   max-width: 370px;
-  margin-bottom: 100px;
-  padding: 48px;
+  padding: 50px;
 
   p {
     max-width: 274px;
@@ -220,7 +219,6 @@
   .box-wrapper {
     display: flex;
     margin-bottom: 40px;
-    margin-top: 48px;
   }
 
   &:nth-child(2) {
@@ -239,10 +237,34 @@
 
 .flex-center {
   margin-bottom: 100px;
+}
 
-  li {
-    border-radius: 50%;
-    margin-right: 16px;
+// ---- SLIDER-Testimonal styles
+
+.splide2 {
+  margin-bottom: 100px;
+
+  .splide__pagination {
+    position: relative;
+    left: initial;
+    transform: initial;
+    margin-top: 30px;
+  }
+
+  .splide__pagination__page {
+    height: 16px;
+    width: 16px;
+    background-color: rgba(9, 164, 216, 0.24);
+    transition: background-color 0.3s;
+
+    &.is-active {
+      transform: initial;
+      background-color: #09a4d8;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
