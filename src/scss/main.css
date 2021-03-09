@@ -1265,8 +1265,7 @@ header .linkref1 {
 
 .content-img {
   width: 770px;
-  height: 433px;
-  margin-right: 8px;
+  height: 430px;
 }
 
 /* ------ TESTIMONIAL SECTION ------ */
@@ -1311,6 +1310,14 @@ header .linkref1 {
 
 .flex-center {
   margin-bottom: 100px;
+}
+
+.splider3 {
+  margin: 100px 0;
+}
+.splider3 .splide__slide {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .splide2 {

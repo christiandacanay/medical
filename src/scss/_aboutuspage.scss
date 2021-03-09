@@ -184,8 +184,7 @@
 }
 .content-img {
   width: 770px;
-  height: 433px;
-  margin-right: 8px;
+  height: 430px;
 }
 
 /* ------ TESTIMONIAL SECTION ------ */
@@ -237,6 +236,16 @@
 
 .flex-center {
   margin-bottom: 100px;
+}
+
+// --- IMAGE CAROUSEL STYLES
+
+.splider3 {
+  margin: 100px 0;
+  .splide__slide {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 // ---- SLIDER-Testimonal styles

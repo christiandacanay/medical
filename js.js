@@ -12,12 +12,16 @@
 
     // ----- Slider (HOMEPAGE) 
 
-	var slider = new Splide('.splide', {
-        pagination: false,
-        arrows: false
-    } );
+    var location = document.querySelectorAll(".splide-home");
 
-    slider.mount();
+    if(location.length) {
+        var slider = new Splide('.splide-home', {
+            pagination: false,
+            arrows: false
+        } );
+        slider.mount();
+    }
+
 
     var icons = document.querySelectorAll(".headicons .icons");
 
@@ -27,14 +31,43 @@
         });
     });
 
-    // ---- Slider (ABOUT US)
 
-    var slider2 = new Splide('.splide2', {
-        arrows: false,
-    } );
+    // ---- IMAGE CAROUSEL (ABOUT US) 
+
+    var selectorClass = ".splider3";
+
+    var carousel = document.querySelectorAll(selectorClass);
+
+    if(carousel.length) {
+
+        var slider3 = new Splide(selectorClass, {
+            focus: "center",
+            autoWidth: true,
+            type: 'loop',
+            pagination: false,
+            arrows: false,
+            autoplay: true,
+            perPage: 1,
+            trimSpace: false,
+        });
+        slider3.mount();
+    }
     
-    slider2.mount();
-    
+
+    //---- Slider (ABOUT US)
+
+    var aboutUsSelectorClass = ".splide2";
+
+    var sliderClass = document.querySelectorAll(aboutUsSelectorClass);
+
+    if(sliderClass.length) {
+        var slider2 = new Splide(aboutUsSelectorClass, {
+            arrows: false,
+        } );
+        
+        slider2.mount();
+    }
+
 
 
 })();
