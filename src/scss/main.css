@@ -313,11 +313,6 @@ select {
   margin-bottom: 80px;
 }
 
-.imagegallery {
-  display: flex;
-  margin-bottom: 56px;
-}
-
 .imagebox {
   margin-left: 30px;
   width: 600px;
@@ -332,15 +327,21 @@ select {
   border-radius: 16px;
 }
 
-.arrowscontainer {
-  position: absolute;
+.splider-gallery .splide__arrows {
+  display: flex;
+  justify-content: flex-end;
+  direction: ltr;
 }
-.arrowscontainer .arrows {
-  position: relative;
-  right: -880px;
+.splider-gallery .splide__arrows .splide__arrow {
+  position: initial;
+  z-index: initial;
+  top: initial;
+  transform: initial;
+  background-color: initial;
+  margin-top: 56px;
 }
-.arrowscontainer .rightarrow {
-  margin-left: 85px;
+.splider-gallery .splide__arrow--next {
+  margin-left: 80px;
 }
 
 /* ----- TESTAMONIAL SECTION ------ */
@@ -1050,7 +1051,6 @@ textarea {
 
 header .linkref1 {
   margin-top: 176px;
-  margin-bottom: 100px;
 }
 
 .flex {
@@ -1528,6 +1528,7 @@ header .linkref1 {
 .container-form button {
   margin-top: 32px;
   margin-bottom: 80px;
+  max-width: 470px;
 }
 
 .borderinput1 {
@@ -1639,6 +1640,7 @@ header .linkref1 {
 .footer .footer__inner {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-top: 100px;
 }
 .footer .box-content p {
   color: rgba(255, 255, 255, 0.6);

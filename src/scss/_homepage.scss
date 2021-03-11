@@ -315,11 +315,6 @@ select {
   margin-bottom: 80px;
 }
 
-.imagegallery {
-  display: flex;
-  margin-bottom: 56px;
-}
-
 .imagebox {
   margin-left: 30px;
   width: 600px;
@@ -334,16 +329,26 @@ select {
   border-radius: 16px;
 }
 
-.arrowscontainer {
-  position: absolute;
+// --- Gallery Slider Styles
 
-  .arrows {
-    position: relative;
-    right: -880px;
+.splider-gallery {
+  .splide__arrows {
+    display: flex;
+    justify-content: flex-end;
+    direction: ltr;
+
+    .splide__arrow {
+      position: initial;
+      z-index: initial;
+      top: initial;
+      transform: initial;
+      background-color: initial;
+      margin-top: 56px;
+    }
   }
 
-  .rightarrow {
-    margin-left: 85px;
+  .splide__arrow--next {
+    margin-left: 80px;
   }
 }
 

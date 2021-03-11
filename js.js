@@ -9,7 +9,6 @@
     
     mobilBtn.addEventListener("click", handleMobileClick);
 
-
     // ----- Slider (HOMEPAGE) 
 
     var location = document.querySelectorAll(".splide-home");
@@ -24,7 +23,6 @@
 
 
     var icons = document.querySelectorAll(".headicons .icons");
-
     icons.forEach((element, index) => {
         element.addEventListener("click", function handleIconClick() {
             slider.go(index);
@@ -68,6 +66,23 @@
         slider2.mount();
     }
 
+    // ----- GALLERY SLIDER
 
+    var gallerySlider = ".splider-gallery";
+
+    var gallerySplider = document.querySelectorAll(gallerySlider);
+
+    console.log(gallerySplider);
+
+    if(gallerySplider.length) {
+        var imageSlider = new Splide('.splider-gallery', {
+            pagination: false,
+            autoWidth: true,
+            perPage: 1,
+            type: 'loop',
+            direction:'rtl',
+        });
+        imageSlider.mount();
+    }
 
 })();
