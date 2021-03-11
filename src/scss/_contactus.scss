@@ -1,86 +1,81 @@
-
 .container-full {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .container-address {
+  margin-top: 20px;
 
-    margin-top: 20px;
-    
-    h1 {
-        margin-bottom: 8px;
-        margin-top: 36px;
-    }
+  h1 {
+    margin-bottom: 8px;
+    margin-top: 36px;
+  }
 
-    .address {
-        margin-top: 8px;
-        margin-bottom: 16px;
-        width: 229px;
-    }
+  .address {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    width: 229px;
+  }
 
-    p {
-        margin-bottom: 24px;
-    }
-
+  p {
+    margin-bottom: 24px;
+  }
 }
 
 .social_media {
-    margin-top: 123px;
+  margin-top: 123px;
 
-    h6 {
-        font-size: 16px;
-        line-height: 28px;
-    }
+  h6 {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 .column1 {
-    width: 265px;
+  width: 265px;
 }
 
-
-// FORM SECTION // 
-
+// FORM SECTION //
 
 .container-form {
-    background-color: #F8FBFC;
-    width: 670px;
+  background-color: #f8fbfc;
+  width: 670px;
 
-    h5 {
-        margin-top: 80px;
-    }
+  h5 {
+    margin-top: 80px;
+  }
 
-    p {
-        margin-top: 16px;
-        margin-bottom: 40px;
-        width: 470px;
-    }
+  p {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 470px;
+  }
 
-    button {
-        margin-top: 32px;
-        margin-bottom: 80px;
-    }
-    
+  button {
+    margin-top: 32px;
+    margin-bottom: 80px;
+    max-width: 470px;
+  }
 }
 
 .borderinput1 {
-    font-family: 'Rubix';
-    border-radius: 4px;
-    background-color: white;
-    border: 1px solid #EEEEEE;
-    color: black;
-    font-size: 16px;
-    line-height: 17px;
-    width: 470px;
-    outline: none;
+  font-family: "Rubix";
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  color: black;
+  font-size: 16px;
+  line-height: 17px;
+  width: 470px;
+  outline: none;
 }
 
 .inputs {
-    padding-left: 12px;
-    margin-top: 16px;
-    height: 56px;
+  padding-left: 12px;
+  margin-top: 16px;
+  height: 56px;
 }
 
 .input5 {
-    padding-top: 14px;
-    padding-bottom: 200px;
+  padding-top: 14px;
+  padding-bottom: 200px;
 }

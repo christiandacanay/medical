@@ -1,59 +1,95 @@
 /* ----- TOP NAVIGATION BAR CSS ----- */
 
 .navcontainer {
-    display: flex;
-    align-items: center;
-    margin-top: 32px;
+  margin-top: 32px;
+  overflow: hidden;
 
-    button {
-        float: right;
-    }
-}
-
-.logoparent {
-    margin-right: 80px;
-}
-
-.navparent {
+  @media screen and (min-width: 1201px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
+  }
+
+  .button {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.navcontainer__top {
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 30px;
+  }
+}
+
+.navparent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  transition: max-height 0.3s;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: space-evenly;
+  }
+
+  li {
+    justify-content: center;
+  }
+
+  li:last-child a {
+    margin-right: 0px;
+  }
+
+  a {
+    font-family: "Rubik";
+    margin-right: 60px;
     padding: 0px;
-    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #878da4;
+    line-height: 28px;
 
-    a {
-        font-family: 'Rubik';
-        margin-right: 60px;
-        padding: 0px;
-        font-weight: 400;
-        font-size: 16px;
-        text-decoration: none;
-        color: #878DA4;
-        line-height: 28px;
+    @media screen and (max-width: 768px) {
+      margin-right: 0;
+      margin-top: 20px;
+      font-size: 20px;
+    }
 
-        &:hover {
-            border-bottom: 2px solid #FAB91C;
-            color: #0F1C49;
-        }
-    }  
+    &:hover {
+      border-bottom: 2px solid #fab91c;
+      color: #0f1c49;
+    }
+  }
 
+  @media screen and (max-width: 768px) {
+    display: block;
+    max-height: 0;
+  }
+
+  &.navparent--open {
+    @media screen and (max-width: 768px) {
+      max-height: 1000px;
+    }
+  }
 }
 
 .navparent-alt {
-
-    a:hover {
-        border-bottom: 2px solid #09A4D8;
-        color: #0F1C49
-    }
+  a:hover {
+    border-bottom: 2px solid #09a4d8;
+    color: #0f1c49;
+  }
 }
 
-
 li {
-    display: flex;
-    align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }

@@ -1,270 +1,278 @@
 <!DOCTYPE html>
-
-<head>
-    <link rel="stylesheet" href="src/scss/main.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<html>
+  <head>
+    <link rel="stylesheet" href="src/scss/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width" />
     <title>Doctor Profile</title>
-</head>
+  </head>
 
-<!-- NAVIGATION SECTION  -->
+  <!-- NAVIGATION SECTION  -->
 
-<body>
+  <body>
     <div id="hero">
-        <div class="navcontainer container">
+      <div class="navcontainer container">
+        <div class="navcontainer__top flex flex-between">
+          <div class="logoparent">
+            <img class="mainlogo" src="Assets/Logo.png" />
+          </div>
 
-            <div class="logoparent">
-                <img class="mainlogo" src="/Aboutus Assets/Main Logo/Logo.svg">
+          <button class="mobile-menu-btn" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokelinecap="round"
+                strokelinejoin="round"
+                strokewidth="{2}"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <ul class="navparent navparent-alt">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="department.html">Department</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contactus.html">Contact</a></li>
+        </ul>
+
+        <button type="button" class="button button--secondary">
+          Make an appointment
+        </button>
+      </div>
+
+      <!------ TOP MAIN SLIDER ------->
+
+      <div class="slider-container sliderimg">
+        <div class="slider-container__wrapper">
+          <div class="wrapper__content">
+            <h1 class="title-banner">Hirini Hakopa</h1>
+            <p>Home - Our Doctors- Micheal Scofield</p>
+          </div>
+        </div>
+      </div>
+
+      <!------ MAIN CONTENT ------->
+
+      <div class="container flex-between">
+        <div class="profile-column_1">
+          <div class="profile-box1 flex">
+            <div class="profile_picture">
+              <img
+                src="small-profilepics/Mask.svg"
+                alt="small profile picture of a doctor"
+              />
             </div>
 
-            <ul class="navparent navparent-alt">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-                <li><a href="department.html">Department</a></li>
-                <li><a href="/services.html">Services</a></li>
-                <li><a href="/contactus.html">Contact</a></li>
+            <div class="profile-content">
+              <h1 class="sub-heading">Hirini Hakopa</h1>
+              <p>LEAD OF DOCTORS</p>
+              <p class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button class="button button--secondary">
+                Book an appointment
+              </button>
+            </div>
+          </div>
+
+          <div class="profile-box2">
+            <div class="button-tabs">
+              <a href="eye">POSITION</a>
+              <a href="#">OFFICE</a>
+              <a href="#">EXPERIENCE</a>
+              <a href="#">SERVICES</a>
+              <a href="#">AWARDS</a>
+            </div>
+
+            <p>
+              Tincidunt dictum felis eu pede mollis pretium. Integer tincidunt.
+              Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+              eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+              eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+              feugiat a, tellus. Phasellus viverra nulla ut metus varius
+              laoreet. Quisque rutrum. Aenean imperdiet.
+            </p>
+
+            <ul>
+              <li>Eye Care</li>
+              <li>Aenean vulputate eleifend tellus.</li>
+              <li>Aliquam lorem ante.</li>
+              <li>Phasellus viverra nulla ut metus.</li>
             </ul>
-
-            <button type="button" class="button button--secondary">Make an appointment</button>
-
+          </div>
         </div>
 
-        <!------ TOP MAIN SLIDER ------->
+        <div class="profile-column_2 flex-column">
+          <h1 class="sub-heading sub-heading--bgblue">Doctors</h1>
 
-
-        <div class="slider-container sliderimg">
-
-            <div class="slider-container__wrapper">
-
-                <div class="wrapper__content">
-                    <h1 class="main-title">Hirini Hakopa</h1>
-                    <p>Home - Our Doctors- Micheal Scofield</p>
-                </div>
-
+          <div class="sidebar flex-between-align">
+            <div class="sidebar-info">
+              <h1 class="heading--med--bold">Lincon Borrow</h1>
+              <h1 class="heading--small--normal">BODY CARE</h1>
             </div>
 
+            <div class="arrow-image">
+              <img src="/Icon/Icon/arrow-right.svg" alt="right arrow" />
+            </div>
+          </div>
 
+          <div class="sidebar flex-between-align">
+            <div class="sidebar-info">
+              <h1 class="heading--med--bold">Denice Ekdahl</h1>
+              <h1 class="heading--small--normal">CARDIOLOGY</h1>
+            </div>
+
+            <div class="arrow-image">
+              <img src="/Icon/Icon/arrow-right.svg" alt="right arrow" />
+            </div>
+          </div>
+
+          <div class="sidebar flex-between-align">
+            <div class="sidebar-info">
+              <h1 class="heading--med--bold">Mariano Rasgado</h1>
+              <h1 class="heading--small--normal">EYE CARE</h1>
+            </div>
+
+            <div class="arrow-image">
+              <img src="/Icon/Icon/arrow-right.svg" alt="right arrow" />
+            </div>
+          </div>
+
+          <div class="sidebar flex-between-align">
+            <div class="sidebar-info">
+              <h1 class="heading--med--bold">Waiapi Karaka</h1>
+              <h1 class="heading--small--normal">BODY CARE</h1>
+            </div>
+
+            <div class="arrow-image">
+              <img src="/Icon/Icon/arrow-right.svg" alt="right arrow" />
+            </div>
+          </div>
+
+          <a href class="linkref1" src="#">View all doctors</a>
+        </div>
+      </div>
+
+      <!-- FOOTER  -->
+
+      <footer class="footer">
+        <div class="footer__inner container">
+          <div class="footer__column1">
+            <div class="info-box">
+              <div class="box-content">
+                <img src="/Assets/footericons.png" alt="pin" />
+                <p>59 Street, 1200 Techpark</p>
+              </div>
+
+              <div class="box-content">
+                <img src="/Assets/footericon2.png" alt="headset" />
+                <p>0123456789</p>
+              </div>
+
+              <div class="box-content">
+                <img src="/Assets/footericon3.png" alt="clock" />
+                <p>8:00 am - 17:00 pm, Monday - Friday</p>
+              </div>
+
+              <div class="social-media-wrapper1">
+                <img src="/Aboutus Assets/Social Media Icons/Icon/Shape.svg" />
+                <img src="/Aboutus Assets/Social Media Icons/Icon/Insta.svg" />
+                <img
+                  src="/Aboutus Assets/Social Media Icons/Icon/Linkedin.svg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__column2">
+            <div class="footer-list">
+              <ul>
+                <h1 class="sub-heading-2">Quick Links</h1>
+                <li><a href>Who We Are</a></li>
+                <li><a href>Our Mission</a></li>
+                <li><a href>Awards</a></li>
+                <li><a href>Experience</a></li>
+                <li><a href>Success Story</a></li>
+              </ul>
+
+              <ul>
+                <h1 class="sub-heading-2">Department</h1>
+                <li><a href>Who We Are</a></li>
+                <li><a href>Our Mission</a></li>
+                <li><a href>Awards</a></li>
+                <li><a href>Experience</a></li>
+                <li><a href>Success Story</a></li>
+              </ul>
+
+              <ul>
+                <h1 class="sub-heading-2">Other</h1>
+                <li><a href>Who We Are</a></li>
+                <li><a href>Our Mission</a></li>
+                <li><a href>Awards</a></li>
+                <li><a href>Experience</a></li>
+                <li><a href>Success Story</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <!------ MAIN CONTENT ------->
-
-        <div class="container flex-between">
-
-
-            
-            <div class="profile-column_1">
-
-                <div class="profile-box1 flex">
-
-                    <div class="profile_picture">
-                        <img src="small-profilepics/Mask.svg" alt="small profile picture of a doctor">
-                    </div>
-
-                    <div class="profile-content">
-                        <h1 class="sub-heading">Hirini Hakopa
-                        </h1>
-                        <p>LEAD OF DOCTORS</p>
-                        <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button class="button button--secondary">Book an appointment</button>
-                    </div>
-                </div>
-            
-
-                <div class="profile-box2">
-
-                    <div class="button-tabs">
-                        <a href="eye">POSITION</a>
-                        <a href="#">OFFICE</a>
-                        <a href="#">EXPERIENCE</a>
-                        <a href="#">SERVICES</a>
-                        <a href="#">AWARDS</a>
-                    </div>
-
-                    <p>Tincidunt dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p>
-
-                    <ul>
-                        <li>Eye Care</li>
-                        <li>Aenean vulputate eleifend tellus.</li>
-                        <li>Aliquam lorem ante.</li>
-                        <li>Phasellus viverra nulla ut metus.</li>
-                    </ul>
-
-                </div>
-
+        <div class="footer-lower-container">
+          <div class="lower-container__wrapper container">
+            <div class="lower-container1">
+              <img
+                class="logo-notext"
+                src="/Aboutus Assets/Main Logo/Logo2.svg"
+                alt="logo no text"
+              />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
 
-            <div class="profile-column_2 flex-column">
-
-                <h1 class="sub-heading sub-heading--bgblue">Doctors</h1>
-
-                <div class="sidebar flex-between-align">
-
-                    <div class=sidebar-info>
-                        <h1 class="heading--med--bold">Lincon Borrow</h1>
-                        <h1 class="heading--small--normal">BODY CARE</h1>
-                    </div>
-
-                    <div class="arrow-image">
-                        <img src="/Icon/Icon/arrow-right.svg" alt="right arrow">
-                    </div>
-
-                </div>
-
-                <div class="sidebar flex-between-align">
-
-                    <div class=sidebar-info>
-                        <h1 class="heading--med--bold">Denice Ekdahl</h1>
-                        <h1 class="heading--small--normal">CARDIOLOGY</h1>
-                    </div>
-
-                    <div class="arrow-image">
-                        <img src="/Icon/Icon/arrow-right.svg" alt="right arrow">
-                    </div>
-                    
-                </div>
-
-                <div class="sidebar flex-between-align">
-
-                    <div class=sidebar-info>
-                        <h1 class="heading--med--bold">Mariano Rasgado</h1>
-                        <h1 class="heading--small--normal">EYE CARE</h1>
-                    </div>
-
-                    <div class="arrow-image">
-                        <img src="/Icon/Icon/arrow-right.svg" alt="right arrow">
-                    </div>
-                    
-                </div>
-
-                <div class="sidebar flex-between-align">
-
-                    <div class=sidebar-info>
-                        <h1 class="heading--med--bold">Waiapi Karaka</h1>
-                        <h1 class="heading--small--normal">BODY CARE</h1>
-                    </div>
-
-                    <div class="arrow-image">
-                        <img src="/Icon/Icon/arrow-right.svg" alt="right arrow">
-                    </div>
-                    
-                </div>
-
-                <a href class="linkref1" src="#">View all doctors</a>
-                
+            <div class="lower-container2">
+              <p>Stay up to date with the latestLe-Beauty news.</p>
+              <div class="input-button-wrapper">
+                <input
+                  class="borderinput input1"
+                  type="text"
+                  id="name"
+                  name="email"
+                  placeholder="Your Email"
+                />
+                <button class="button-small-input">Send</button>
+              </div>
             </div>
+          </div>
+
+          <div class="foot-note">
+            <p>
+              © Copyright Le-Beauty 2019. All Right Reserved. Designed and
+              Developed by LessCreate
+            </p>
+          </div>
         </div>
-
-        <!-- FOOTER  -->
-
-        <footer class="footer">
-
-            <div class="footer__inner container">
-
-
-                <div class="footer__column1">
-
-                    <div class="info-box">
-
-                        <div class="box-content">
-                            <img src="/Assets/footericons.png" alt="pin">
-                            <p>59 Street, 1200 Techpark</p>
-                        </div>
-
-                        <div class="box-content">
-                            <img src="/Assets/footericon2.png" alt="headset">
-                            <p>0123456789</p>
-                        </div>
-                        
-                        <div class="box-content">
-                            <img src="/Assets/footericon3.png" alt="clock">
-                            <p>8:00 am - 17:00 pm, Monday - Friday</p>
-                        </div>
-
-                        <div class="social-media-wrapper1">
-                            <img src="/Aboutus Assets/Social Media Icons/Icon/Shape.svg">
-                            <img src="/Aboutus Assets/Social Media Icons/Icon/Insta.svg">
-                            <img src="/Aboutus Assets/Social Media Icons/Icon/Linkedin.svg">
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="footer__column2">
-
-                    <div class="footer-list">
-
-                        <ul>
-                            <h1 class="sub-heading-2">Quick Links</h1>
-                            <li><a href>Who We Are</a></li>
-                            <li><a href>Our Mission</a></li>
-                            <li><a href>Awards</a></li>
-                            <li><a href>Experience</a></li>
-                            <li><a href>Success Story</a></li>
-                        </ul>
-
-                        <ul>
-                            <h1 class="sub-heading-2">Department</h1>
-                            <li><a href>Who We Are</a></li>
-                            <li><a href>Our Mission</a></li>
-                            <li><a href>Awards</a></li>
-                            <li><a href>Experience</a></li>
-                            <li><a href>Success Story</a></li>
-                        </ul>
-
-                        <ul>
-                            <h1 class="sub-heading-2">Other</h1>
-                            <li><a href>Who We Are</a></li>
-                            <li><a href>Our Mission</a></li>
-                            <li><a href>Awards</a></li>
-                            <li><a href>Experience</a></li>
-                            <li><a href>Success Story</a></li>
-                        </ul>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-lower-container">
-
-                <div class="lower-container__wrapper container">
-                    <div class="lower-container1">
-                        <img class="logo-notext" src="/Aboutus Assets/Main Logo/Logo2.svg" alt="logo no text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        </p>
-                    </div>
-
-                    <div class="lower-container2">
-                        <p>Stay up to date with the latestLe-Beauty news.</p>
-                        <div class="input-button-wrapper">
-                            <input class="borderinput input1" type="text" id="name" name="email" placeholder="Your Email">
-                            <button class="button-small-input">Send</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="foot-note">
-                    <p>© Copyright Le-Beauty 2019. All Right Reserved. Designed and Developed by LessCreate</p>
-                </div>
-            </div>
-
-        </footer>
-
+      </footer>
     </div>
 
-
-    
-</body>
-
+    <script src="./js.js"></script>
+  </body>
 </html>

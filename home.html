@@ -1,323 +1,431 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="src/scss/main.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <title> Homepage</title>
-    </head>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/scss/main.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Homepage</title>
+  </head>
+  <!-- NAVIGATION SECTION  -->
 
-    <!-- NAVIGATION SECTION  -->
+  <body>
+    <div id="hero">
+      <div class="navcontainer container">
+        <div class="navcontainer__top flex flex-between">
+          <div class="logoparent">
+            <img class="mainlogo" src="Assets/Logo.png" />
+          </div>
 
-    <body>
-        <div id="hero">
-            <div class="navcontainer container">
-
-                <div class="logoparent"> 
-                    <img class="mainlogo" src="Assets/Logo.png">
-                </div>
-                    
-                <ul class="navparent">
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/Aboutus.html">About Us</a></li>
-                    <li><a href="/department.html">Department</a></li>
-                    <li><a href="/services.html">Services</a> </li>
-                    <li><a href="/contactus.html">Contact</a></li>
-                </ul>
-                
-                <button type="button" class="button button-main">Make an appointment</button>
-                
-            </div>
-
-            <!-- FORM CONTAINER SECTION  -->
-            
-            <div class="topheadingcontainer container">
-
-
-                <div class="topheadingwrapper">
-                    <h1 class="heading--large">About <br>Le-Beauty Spa</br></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod..</p>
-                </div>
-
-            </div>
-
-            <div class="mainimage">
-
-                <img src="/Assets/Img.svg">
-
-                <div class="mainimage__overlay">
-
-                    <div class="container flex flex-end">
-
-                        <div class="formcontainer">
-
-                            <h1 class="form--heading">Appointment</h1>
-                
-                            <div class="formlayout">
-                
-                                <select id="selectlocation" name="Select location" placeholder="Select Location">
-                                    <option value="United Kingdom">United Kingdom</option>
-                                    <option value="South Korea">Korea</option>
-                                    <option value="USA">USA</option>
-                                </select>
-                
-                                <input class="input borderinput input1" type="text" id="name" name="email" placeholder="Your Name">
-                
-                                <input class="input borderinput input2" type="text" id="birthday" name="lastname" placeholder="Birthday DD/MM/YY">
-                
-                                <input class="input borderinput input3" type="text" id="phone" name="email" placeholder="Your Phone">
-                        
-                                <input class="input borderinput input4" type="text" id="email" name="email" placeholder="Your Email">
-                
-                                <textarea class="input borderinput input5" type="text" id="message" name="email" placeholder="Your Message"></textarea>
-                
-                                <button type="button" class="button button--primary">Make An Appointment</button>
-                
-                            </div>   
-                
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- ABOUT US SECTION -->
-
-            <div class="aboutusmaincontainer container">
-
-                <div class="bgset1"></div>
-
-                <div class="aboutuscontainer">
-
-                    <div class="bgset1"></div>
-                    
-                    <div class="wrapperimg">
-
-                        <img class="img2" src="Assets/Img.png">
-                    </div>
-
-                    <div class="aboutuswrapper">
-
-                        <h1 class="heading--main">We know about your body</h1>
-
-                        <div class="ptextright">
-                            
-                            <p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <p class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                            <a href="http://www.google.co.uk" class="hyperlink">View more about us</a>
-                        </div>
-                        
-                    
-                    </div>
-                </div>
-            </div>
-
-            <!-- OUR SERVICES SECTION -->
-
-            <div class="servicecontainer container">
-
-                <div class="servicestext">
-
-                    <div class="service__copy">
-                        <h1 class="heading--main">We bring to you high class services</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>       
-                    </div>
-                    
-                    <button type="button" class="button button-main servicebutton">See All services</button>
-
-                        
-                </div>
-
-                <div class="gridcontainer">
-
-                    <div class="gridsection1">
-                            
-                        <div class="grid grid1">
-                            <img src="Assets/Service/bodycream.png">
-                            <h2 class="sub-heading">Cream Massage</h2>
-                        </div>
-        
-                        <div class="grid grid2">
-                            <img src="Assets/Service/perfume.png">
-                            <h2 class="sub-heading">Perfume</h2>
-                        </div>
-                    </div>
-                        
-                    <div class="gridsection2">
-        
-                        <div class="grid grid3">
-                            <img src="Assets/Service/suncream.png">
-                            <h2 class="sub-heading">Sun Lotion</h2>
-                        </div>
-                        <div class="grid grid4">
-                            <img src="Assets/Service/Light.png">
-                            <h2 class="sub-heading">Steam</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GALLERY SECTION -->
-
-
-            <div class="gallerymaincontainer">
-
-                <div class="bgset2"></div>
-
-                <div class="gallerycontainer">
-
-                    <div class="gallerywrapper">
-
-                        <h1 class="heading--main">Our Galleries</h1>
-
-                        <div class="imagegallery">
-                            
-                            <div class="imagebox">
-                                <img class="image1" src="https://cdn.pixabay.com/photo/2018/04/10/03/35/korean-women-3306250_1280.jpg">
-                            </div>
-                            <div class="imagebox">
-                                <img class="image1" src="https://cdn.pixabay.com/photo/2017/08/08/09/44/food-photography-2610863_1280.jpg">
-                            </div>
-                            <div class="imagebox">
-                                <img class="image1" src="https://cdn.pixabay.com/photo/2020/11/30/07/16/pinwheel-5790088_1280.jpg">
-                            </div>
-                        </div>
-                            
-                        
-                    </div>
-                    
-                    <div class="arrowscontainer">
-                        <img class="arrows leftarrow" src="Assets/Arrows/Icon/arrow-left.png" alt="left arrow">
-                        <img class="arrows rightarrow" src="Assets/Arrows/Icon/Icon/arrow-right.png" alt="rightarrow">
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- TESTAMONIAL SECTION -->
-
-            <div class="testcontainer">
-
-                <div class="testwrapper container">
-                    <img class="quotation" src="Assets/left-quote.png" alt="quotationicon">
-                    <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt.</p>
-                    <p>Frank Galaghers</p>
-
-                    <div class="headicons">
-                        <div class="icons icon1"></div>
-                        <div class="icons icon2"></div>
-                        <div class="icons icon3"></div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!------- LATEST NEWS SECTION -------->
-
-            <div class="newscontainer">
-
-                <div class="container">
-                    
-                    <div class="pwrap">
-                        <h1 class="heading--main">Our latest news</h1>
-                    </div>
-                    
-                    <a class="hyperlink" href="#">See All News</a>
-
-                    <div class="imgsection">
-
-                        <div class="news newsimg1">
-                            <div class="innerimg">
-                                <h2>BEAUTY</h2>
-                                <p>Top shower gel for women</p>
-                            </div>
-                        </div>
-                        <div class="news newsimg2">
-                            <div class="innerimg">
-                                <h2>BEAUTY</h2>
-                                <p>Top shower gel for women</p>
-                            </div>
-                        </div>
-                        <div class="news newsimg3"> 
-                            <div class="innerimg">
-                                <h2>HEALTH</h2>
-                                <p>How to swim properly</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+          <button class="mobile-menu-btn" type="button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokelinecap="round"
+                strokelinejoin="round"
+                strokewidth="{2}"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
 
+        <ul class="navparent">
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/Aboutus.html">About Us</a></li>
+          <li><a href="/department.html">Department</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contactus.html">Contact</a></li>
+        </ul>
 
+        <button type="button" class="button button-main">
+          Make an appointment
+        </button>
+      </div>
+      <!-- FORM CONTAINER SECTION  -->
 
-        <footer class="footer footer--alt">
+      <div class="topheadingcontainer container">
+        <div class="topheadingwrapper">
+          <h1 class="heading--xl">About <br />Le-Beauty Spa</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod..
+          </p>
+        </div>
+      </div>
 
+      <div class="mainimage">
+        <img src="/Assets/Img.svg" />
 
-            <div class="footer__inner container">
+        <div class="mainimage__overlay">
+          <div class="container flex flex-end">
+            <div class="formcontainer">
+              <h1 class="form--heading">Appointment</h1>
 
-                <div class="footer__column1">
+              <div class="formlayout">
+                <select
+                  id="selectlocation"
+                  name="Select location"
+                  placeholder="Select Location"
+                >
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="USA">USA</option>
+                </select>
 
-                    <div class="wrapper-logo">
-                        <img src="/Assets/Logo.png" alt="logo">
-                    </div>
+                <input
+                  class="input borderinput"
+                  type="text"
+                  id="name"
+                  name="email"
+                  placeholder="Your Name"
+                />
 
-                    <p class="space">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <input
+                  class="input borderinput"
+                  type="text"
+                  id="birthday"
+                  name="lastname"
+                  placeholder="Birthday DD/MM/YY"
+                />
 
-                    <div class="info-box">
+                <input
+                  class="input borderinput"
+                  type="text"
+                  id="phone"
+                  name="email"
+                  placeholder="Your Phone"
+                />
 
-                        <div class="box-content">
+                <input
+                  class="input borderinput"
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                />
 
-                            <img src="/Assets/footericons.png" alt="pin">
-                            <p>59 Street, 1200 Techpark</p>
-                        </div>
-                        <div class="box-content">
-                            <img src="/Assets/footericon2.png" alt="headset">
-                            <p>0123456789</p>
-                        </div>
-                        <div class="box-content">
-                            <img src="/Assets/footericon3.png" alt="clock">
-                            <p>8:00 am - 17:00 pm, Monday - Friday</p>
-                        </div>
-                    </div>
+                <textarea
+                  class="input borderinput input5"
+                  type="text"
+                  id="message"
+                  name="email"
+                  placeholder="Your Message"
+                ></textarea>
 
+                <button type="button" class="button button--primary">
+                  Make An Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                </div>
+      <!-- ABOUT US SECTION -->
 
-                <div class="footer__column2">
+      <div class="aboutusmaincontainer container">
+        <div class="bgset1"></div>
 
-                    <div class="footer-list">
+        <div class="aboutuscontainer">
+          <div class="bgset1"></div>
 
-                        <ul>
-                            <h3>Quick Links</h3>
-                            <li><a href>Who We Are</a></li>
-                            <li><a href>Our Mission</a></li>
-                            <li><a href>Awards</a></li>
-                            <li><a href>Experience</a></li>
-                            <li><a href>Success Story</a></li>
-                        </ul>
+          <div class="wrapperimg"></div>
 
-                        <ul>
-                            <h3>Department</h3>
-                            <li><a href>Who We Are</a></li>
-                            <li><a href>Our Mission</a></li>
-                            <li><a href>Awards</a></li>
-                            <li><a href>Experience</a></li>
-                            <li><a href>Success Story</a></li>
-                        </ul>
+          <div class="aboutuswrapper">
+            <h1 class="heading--main">We know about your body</h1>
 
-                    </div>
+            <div class="ptextright">
+              <p class="text1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p class="text2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="http://www.google.co.uk" class="hyperlink"
+                >View more about us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-                </div>
-                
+      <!-- OUR SERVICES SECTION -->
+
+      <div class="servicecontainer container">
+        <div class="servicestext">
+          <div class="service__copy">
+            <h1 class="heading--main">We bring to you high class services</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+
+          <button type="button" class="button button-main servicebutton">
+            See All services
+          </button>
+        </div>
+
+        <div class="gridcontainer">
+          <div class="gridsection1">
+            <div class="grid grid1">
+              <img src="Assets/Service/bodycream.png" />
+              <h2 class="sub-heading">Cream Massage</h2>
             </div>
 
+            <div class="grid grid2">
+              <img src="Assets/Service/perfume.png" />
+              <h2 class="sub-heading">Perfume</h2>
+            </div>
+          </div>
 
-        </footer>
+          <div class="gridsection2">
+            <div class="grid grid2">
+              <img src="Assets/Service/suncream.png" />
+              <h2 class="sub-heading">Sun Lotion</h2>
+            </div>
+            <div class="grid grid1">
+              <img src="Assets/Service/Light.png" />
+              <h2 class="sub-heading">Steam</h2>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </body>
+      <!-- GALLERY SECTION -->
 
+      <div class="gallerymaincontainer">
+        <div class="bgset2"></div>
+
+        <div class="gallerycontainer">
+          <div class="gallerywrapper">
+            <h1 class="heading--main">Our Galleries</h1>
+            <div>
+              <div class="splide splider-gallery">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="imagebox">
+                        <img
+                          class="image1"
+                          src="https://cdn.pixabay.com/photo/2018/04/10/03/35/korean-women-3306250_1280.jpg"
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="imagebox">
+                        <img
+                          class="image1"
+                          src="https://cdn.pixabay.com/photo/2017/08/08/09/44/food-photography-2610863_1280.jpg"
+                        />
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="imagebox">
+                        <img
+                          class="image1"
+                          src="https://cdn.pixabay.com/photo/2020/11/30/07/16/pinwheel-5790088_1280.jpg"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <img
+                      class="arrows leftarrow"
+                      src="Assets/Arrows/Icon/arrow-left.png"
+                      alt="left arrow"
+                    />
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <img
+                      class="arrows rightarrow"
+                      src="Assets/Arrows/Icon/Icon/arrow-right.png"
+                      alt="rightarrow"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TESTAMONIAL SECTION -->
+
+      <div class="testcontainer">
+        <div class="testwrapper">
+          <div class="splide splide-home">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+                <li class="splide__slide">
+                  <img
+                    class="quotation"
+                    src="Assets/left-quote.png"
+                    alt="quotationicon"
+                  />
+                  <p class="testimonial-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sed do eiusmod tempor incididunt.
+                  </p>
+                  <p>Frank Galaghers</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="headicons">
+            <button class="icons icon1"></button>
+            <button class="icons icon2"></button>
+            <button class="icons icon3"></button>
+          </div>
+        </div>
+      </div>
+      <!------- LATEST NEWS SECTION -------->
+
+      <div class="newscontainer">
+        <div class="container">
+          <div class="pwrap">
+            <h1 class="heading--main">Our latest news</h1>
+          </div>
+
+          <div class="container">
+            <div class="imgsection row">
+              <div class="col">
+                <div class="news box1">
+                  <div class="innerimg">
+                    <h2>BEAUTY</h2>
+                    <p>Top shower gel for women</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="news box2">
+                  <div class="innerimg">
+                    <h2>BEAUTY</h2>
+                    <p>Top shower gel for women</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="news box3">
+                  <div class="innerimg">
+                    <h2>HEALTH</h2>
+                    <p>How to swim properly</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer footer--alt">
+      <div class="footer__inner container">
+        <div class="footer__column1">
+          <div class="wrapper-logo">
+            <img src="/Assets/Logo.png" alt="logo" />
+          </div>
+
+          <p class="space">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="info-box">
+            <div class="box-content">
+              <img src="/Assets/footericons.png" alt="pin" />
+              <p>59 Street, 1200 Techpark</p>
+            </div>
+            <div class="box-content">
+              <img src="/Assets/footericon2.png" alt="headset" />
+              <p>0123456789</p>
+            </div>
+            <div class="box-content">
+              <img src="/Assets/footericon3.png" alt="clock" />
+              <p>8:00 am - 17:00 pm, Monday - Friday</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__column2">
+          <div class="footer-list">
+            <ul>
+              <h3 class="sub-heading-2">Quick Links</h3>
+              <li><a href>Who We Are</a></li>
+              <li><a href>Our Mission</a></li>
+              <li><a href>Awards</a></li>
+              <li><a href>Experience</a></li>
+              <li><a href>Success Story</a></li>
+            </ul>
+
+            <ul>
+              <h3 class="sub-heading-2">Department</h3>
+              <li><a href>Who We Are</a></li>
+              <li><a href>Our Mission</a></li>
+              <li><a href>Awards</a></li>
+              <li><a href>Experience</a></li>
+              <li><a href>Success Story</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./fakeplugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="./js.js"></script>
+  </body>
 </html>
